@@ -17,9 +17,8 @@ npm run mock-start
 npm i
 npm run start
 
-// Сидеры
-npm run seed:currencies
-npm run seed:test-data
+// Сидер
+npm run seed
 ```
 
 ### Запуск в dev-режиме
@@ -28,9 +27,8 @@ npm run seed:test-data
 npm i
 npm run dev
 
-// Сидеры
-npm run seed:currencies
-npm run seed:test-data
+// Сидер
+npm run seed
 ```
 
 # Задание
