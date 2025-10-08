@@ -21,9 +21,9 @@ model Vote {
   id        String   @id @default(cuid())
   idea      Idea     @relation(fields: [ideaId], references: [id])
   ideaId    String   @map("idea_id")
-  ip        String
+  ip        String   @db.Inet
   createdAt DateTime @default(now()) @map("created_at")
 
-  @@unique([ideaId, ip])
+  @@unique([ip, ideaId])
   @@map("votes")
 }
